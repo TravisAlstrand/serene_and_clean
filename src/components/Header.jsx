@@ -76,6 +76,9 @@ const Header = () => {
             >
               About
             </a>
+            <a href="#services" className="hover:text-gray-600">
+              Services
+            </a>
             <a href="#testimonials" className="hover:text-gray-600">
               Testimonials
             </a>
@@ -117,6 +120,13 @@ const Header = () => {
             aria-current="page"
           >
             About
+          </a>
+          <a
+            href="#services"
+            className="text-xl hover:text-gray-600"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Services
           </a>
           <a
             href="#testimonials"
