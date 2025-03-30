@@ -4,7 +4,7 @@ const About = () => {
       id="about"
       className="h-[calc(100vh-4rem)] w-full scroll-mt-20 bg-blue-500"
     >
-      About
+      <h2>About</h2>
     </section>
   );
 };
