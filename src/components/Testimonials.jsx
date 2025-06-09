@@ -1,20 +1,29 @@
 import { Carousel } from "antd";
-import { useState, useEffect } from "react";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { useRef, useState, useEffect } from "react";
 
 const contentStyle = {
   height: "100%",
-  color: "#fff",
+  color: "#1f2937",
   textAlign: "center",
-  background: "#364d79",
+  background: "#ffffff",
   padding: "2rem",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  borderRadius: "0.5rem",
+  boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
+  border: "1px solid #e5e7eb",
+  margin: "0 1rem",
 };
+
+const arrowButtonClass =
+  "absolute top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full shadow-lg p-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200 cursor-pointer";
 
 const Testimonials = () => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const carouselRef = useRef();
 
   useEffect(() => {
     // Check user's motion preferences
@@ -30,93 +39,141 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="h-[calc(100vh-4rem)] w-full scroll-mt-20 bg-green-500"
+      className="h-[calc(100vh-4rem)] w-full scroll-mt-20 border-b-2 bg-white"
       aria-label="Customer Testimonials"
     >
-      <h2>Testimonials</h2>
-      <div className="mx-auto h-full max-w-5xl">
-        <Carousel
-          autoplay={!prefersReducedMotion}
-          autoplaySpeed={8000}
-          className="h-full"
-          dots={true}
-          effect={prefersReducedMotion ? "fade" : "slide"}
-          accessibility={true}
-          aria-label="Testimonial carousel"
-        >
-          <div
-            className="h-full"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="Testimonial 1 of 4"
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="mb-12 text-center text-4xl font-bold text-gray-800">
+          What Our Clients Say
+        </h2>
+        <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-gray-600">
+          Don't just take our word for it. Here's what our satisfied customers
+          have to say about their experience with Serene and Clean.
+        </p>
+        <div className="relative mx-auto max-w-5xl">
+          {/* Custom Arrows */}
+          <button
+            className={`${arrowButtonClass} left-0`}
+            aria-label="Previous testimonial"
+            onClick={() => carouselRef.current.prev()}
+            type="button"
           >
-            <div style={contentStyle}>
-              <div className="mx-auto max-w-3xl">
-                <h3 className="mb-4 text-2xl">Awesome service!</h3>
-                <p className="mb-6">
-                  I had a great experience with Serene and Clean. The staff was
-                  friendly and the service was excellent. I would definitely
-                  recommend them to anyone.
-                </p>
-                <p className="text-lg italic">- Sarah Johnson</p>
+            <LeftOutlined />
+          </button>
+          <button
+            className={`${arrowButtonClass} right-0`}
+            aria-label="Next testimonial"
+            onClick={() => carouselRef.current.next()}
+            type="button"
+          >
+            <RightOutlined />
+          </button>
+          <Carousel
+            ref={carouselRef}
+            autoplay={!prefersReducedMotion}
+            autoplaySpeed={8000}
+            className="h-full"
+            dots={{
+              className: "custom-carousel-dots",
+            }}
+            dotPosition="bottom"
+            effect={prefersReducedMotion ? "fade" : "scrollx"}
+            accessibility={true}
+            aria-label="Testimonial carousel"
+            pauseOnHover={true}
+            swipeToSlide={true}
+            draggable={true}
+          >
+            <div
+              className="h-full"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Testimonial 1 of 4"
+            >
+              <div style={contentStyle}>
+                <div className="mx-auto max-w-3xl">
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                    Awesome service!
+                  </h3>
+                  <p className="mb-6 text-gray-600">
+                    I had a great experience with Serene and Clean. The staff
+                    was friendly and the service was excellent. I would
+                    definitely recommend them to anyone.
+                  </p>
+                  <p className="text-lg font-medium text-gray-800">
+                    - Sarah Johnson
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="h-full"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="Testimonial 2 of 4"
-          >
-            <div style={contentStyle}>
-              <div className="mx-auto max-w-3xl">
-                <h3 className="mb-4 text-2xl">Dedicated and reliable</h3>
-                <p className="mb-6">
-                  I had a great experience with Serene and Clean. The staff was
-                  friendly and the service was excellent. I would definitely
-                  recommend them to anyone.
-                </p>
-                <p className="text-lg italic">- Michael Chen</p>
+            <div
+              className="h-full"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Testimonial 2 of 4"
+            >
+              <div style={contentStyle}>
+                <div className="mx-auto max-w-3xl">
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                    Dedicated and reliable
+                  </h3>
+                  <p className="mb-6 text-gray-600">
+                    I had a great experience with Serene and Clean. The staff
+                    was friendly and the service was excellent. I would
+                    definitely recommend them to anyone.
+                  </p>
+                  <p className="text-lg font-medium text-gray-800">
+                    - Michael Chen
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="h-full"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="Testimonial 3 of 4"
-          >
-            <div style={contentStyle}>
-              <div className="mx-auto max-w-3xl">
-                <h3 className="mb-4 text-2xl">Great attention to detail</h3>
-                <p className="mb-6">
-                  I had a great experience with Serene and Clean. The staff was
-                  friendly and the service was excellent. I would definitely
-                  recommend them to anyone.
-                </p>
-                <p className="text-lg italic">- Emily Rodriguez</p>
+            <div
+              className="h-full"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Testimonial 3 of 4"
+            >
+              <div style={contentStyle}>
+                <div className="mx-auto max-w-3xl">
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                    Great attention to detail
+                  </h3>
+                  <p className="mb-6 text-gray-600">
+                    I had a great experience with Serene and Clean. The staff
+                    was friendly and the service was excellent. I would
+                    definitely recommend them to anyone.
+                  </p>
+                  <p className="text-lg font-medium text-gray-800">
+                    - Emily Rodriguez
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="h-full"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="Testimonial 4 of 4"
-          >
-            <div style={contentStyle}>
-              <div className="mx-auto max-w-3xl">
-                <h3 className="mb-4 text-2xl">Excellent customer service</h3>
-                <p className="mb-6">
-                  I had a great experience with Serene and Clean. The staff was
-                  friendly and the service was excellent. I would definitely
-                  recommend them to anyone.
-                </p>
-                <p className="text-lg italic">- David Thompson</p>
+            <div
+              className="h-full"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Testimonial 4 of 4"
+            >
+              <div style={contentStyle}>
+                <div className="mx-auto max-w-3xl">
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                    Excellent customer service
+                  </h3>
+                  <p className="mb-6 text-gray-600">
+                    I had a great experience with Serene and Clean. The staff
+                    was friendly and the service was excellent. I would
+                    definitely recommend them to anyone.
+                  </p>
+                  <p className="text-lg font-medium text-gray-800">
+                    - David Thompson
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </Carousel>
+          </Carousel>
+        </div>
       </div>
     </section>
   );
