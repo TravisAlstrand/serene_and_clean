@@ -20,18 +20,16 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="h-[calc(100vh-4rem)] w-full scroll-mt-20 border-b-2 bg-white"
+      className="w-full scroll-mt-20 border-b-2 bg-[#95d5b2] text-[#081c15]"
       aria-label="Services Information"
     >
       <div className="container mx-auto px-4 py-16">
-        <h2 className="mb-12 text-center text-4xl font-bold text-gray-800">
-          Our Services
-        </h2>
+        <h2 className="mb-12 text-center text-4xl font-bold">Our Services</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
-              className="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+              className="rounded-lg bg-[#d8f3dc] p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
             >
               <h3 className="mb-4 text-xl font-semibold text-gray-800">
                 {service.title}

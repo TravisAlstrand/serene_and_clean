@@ -4,9 +4,9 @@ import { useRef, useState, useEffect } from "react";
 
 const contentStyle = {
   height: "100%",
-  color: "#1f2937",
+  color: "#081c15",
   textAlign: "center",
-  background: "#ffffff",
+  background: "#52b788",
   padding: "2rem",
   display: "flex",
   flexDirection: "column",
@@ -19,7 +19,7 @@ const contentStyle = {
 };
 
 const arrowButtonClass =
-  "absolute top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full shadow-lg p-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200 cursor-pointer";
+  "absolute top-1/2 -translate-y-1/2 z-10 bg-[#95d5b2] border border-gray-300 rounded-full shadow-lg p-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200 cursor-pointer";
 
 const Testimonials = () => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
@@ -39,7 +39,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="h-[calc(100vh-4rem)] w-full scroll-mt-20 border-b-2 bg-white"
+      className="w-full scroll-mt-20 border-b-2 bg-[#d8f3dc]"
       aria-label="Customer Testimonials"
     >
       <div className="container mx-auto px-4 py-16">
@@ -92,15 +92,15 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#081c15]">
                     Awesome service!
                   </h3>
-                  <p className="mb-6 text-gray-600">
+                  <p className="mb-6 text-[#0d2d22]">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium text-gray-800">
+                  <p className="text-lg font-medium text-[#081c15]">
                     - Sarah Johnson
                   </p>
                 </div>
@@ -114,15 +114,15 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#081c15]">
                     Dedicated and reliable
                   </h3>
-                  <p className="mb-6 text-gray-600">
+                  <p className="mb-6 text-[#0d2d22]">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium text-gray-800">
+                  <p className="text-lg font-medium text-[#081c15]">
                     - Michael Chen
                   </p>
                 </div>
@@ -136,15 +136,15 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#081c15]">
                     Great attention to detail
                   </h3>
-                  <p className="mb-6 text-gray-600">
+                  <p className="mb-6 text-[#0d2d22]">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium text-gray-800">
+                  <p className="text-lg font-medium text-[#081c15]">
                     - Emily Rodriguez
                   </p>
                 </div>
@@ -158,15 +158,15 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#081c15]">
                     Excellent customer service
                   </h3>
-                  <p className="mb-6 text-gray-600">
+                  <p className="mb-6 text-[#0d2d22]">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium text-gray-800">
+                  <p className="text-lg font-medium text-[#081c15]">
                     - David Thompson
                   </p>
                 </div>
