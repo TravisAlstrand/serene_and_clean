@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="relative h-[calc(100vh-4rem)] w-full">
       <div className="absolute inset-0">
         <img
-          src="/images/hero/chatgptBucketImage.png"
+          src="/images/hero/CounterTop.png"
           alt="Serene and Clean - Professional Cleaning Services"
           className="block h-full w-full object-cover"
         />
@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/20">
         <div className="relative z-10 -mt-32 text-center">
-          <h1 className="text-4xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] md:text-5xl lg:text-6xl">
+          <h1 className="text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] lg:text-9xl">
             Serene and Clean
           </h1>
           <p className="mt-4 text-lg text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] md:text-xl lg:text-2xl">

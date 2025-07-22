@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
 @import "tailwindcss";
 
 html {
   scroll-behavior: smooth;
+}
+
+h1,
+.heading-logo {
+  font-family: "Birthstone", cursive;
 }

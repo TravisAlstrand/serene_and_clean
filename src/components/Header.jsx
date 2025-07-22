@@ -35,14 +35,14 @@ const Header = () => {
   return (
     <>
       <header
-        className="sticky top-0 z-[60] h-16 bg-[#d8f3dc] text-[#081c15] shadow-sm"
+        className="sticky top-0 z-[60] h-16 bg-white shadow-sm"
         role="banner"
       >
         <div className="container mx-auto flex h-full items-center justify-between px-4">
           {/* Brand Name - Always visible */}
           <a
             href="#top"
-            className="text-xl font-semibold"
+            className="heading-logo text-3xl font-semibold"
             aria-label="Serene and Clean - Home"
           >
             Serene and Clean
@@ -101,7 +101,7 @@ const Header = () => {
       {/* Mobile Menu Panel */}
       <div
         id="mobile-menu"
-        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm transform bg-[#d8f3dc] transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } ${prefersReducedMotion ? "transition-none" : ""}`}
         role="dialog"
@@ -109,7 +109,7 @@ const Header = () => {
         aria-label="Mobile navigation"
       >
         <nav
-          className="flex h-full flex-col items-center justify-center space-y-8 text-[#081c15]"
+          className="flex h-full flex-col items-center justify-center space-y-8"
           role="navigation"
           aria-label="Mobile navigation"
         >
