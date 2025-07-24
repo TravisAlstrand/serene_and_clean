@@ -6,7 +6,9 @@ const Services = () => {
       aria-label="Services Information"
     >
       <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center">
-        <h2 className="mb-12 text-4xl font-bold">Our Services</h2>
+        <h2 className="mb-12 text-4xl font-bold text-[#386641]">
+          Our Services
+        </h2>
         <p className="max-w-5xl text-lg">
           We proudly serve both residential and commercial clients throughout
           Nevada and Placer counties, offering customized cleaning solutions

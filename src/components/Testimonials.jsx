@@ -6,7 +6,7 @@ const contentStyle = {
   height: "100%",
   color: "#081c15",
   textAlign: "center",
-  background: "#FFF",
+  background: "#f2e8cf",
   padding: "2rem",
   display: "flex",
   flexDirection: "column",
@@ -19,7 +19,7 @@ const contentStyle = {
 };
 
 const arrowButtonClass =
-  "absolute top-1/2 -translate-y-1/2 z-10 border border-gray-300 rounded-full shadow-lg p-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200 cursor-pointer";
+  "absolute top-1/2 -translate-y-1/2 z-10 border border-gray-300 rounded-full shadow-lg p-2 text-2xl text-gray-700 hover:bg-white hover:text-blue-600 transition-colors duration-200 cursor-pointer";
 
 const Testimonials = () => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
@@ -43,7 +43,7 @@ const Testimonials = () => {
       aria-label="Customer Testimonials"
     >
       <div className="container mx-auto px-4 py-16">
-        <h2 className="mb-12 text-center text-4xl font-bold text-gray-800">
+        <h2 className="mb-12 text-center text-4xl font-bold text-[#386641]">
           What Our Clients Say
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-gray-600">
@@ -92,7 +92,7 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
                     Awesome service!
                   </h3>
                   <p className="mb-6">
@@ -112,7 +112,7 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
                     Dedicated and reliable
                   </h3>
                   <p className="mb-6">
@@ -132,7 +132,7 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
                     Great attention to detail
                   </h3>
                   <p className="mb-6">
@@ -152,7 +152,7 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold">
+                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
                     Excellent customer service
                   </h3>
                   <p className="mb-6">

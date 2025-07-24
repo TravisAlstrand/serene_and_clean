@@ -9,3 +9,7 @@ h1,
 .heading-logo {
   font-family: "Birthstone", cursive;
 }
+
+.anticon svg {
+  fill: #136c36;
+}

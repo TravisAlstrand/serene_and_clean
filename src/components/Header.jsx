@@ -35,14 +35,14 @@ const Header = () => {
   return (
     <>
       <header
-        className="sticky top-0 z-[60] h-16 bg-white shadow-sm"
+        className="sticky top-0 z-[60] h-16 bg-[#f2e8cf] shadow-sm"
         role="banner"
       >
         <div className="container mx-auto flex h-full items-center justify-between px-4">
           {/* Brand Name - Always visible */}
           <a
             href="#top"
-            className="heading-logo text-3xl font-semibold"
+            className="heading-logo text-3xl font-semibold text-[#386641]"
             aria-label="Serene and Clean - Home"
           >
             Serene and Clean
@@ -71,18 +71,21 @@ const Header = () => {
           >
             <a
               href="#about"
-              className="hover:text-gray-600"
+              className="text-[#386641] hover:text-[#6a994e]"
               aria-current="page"
             >
               About
             </a>
-            <a href="#services" className="hover:text-gray-600">
+            <a href="#services" className="text-[#386641] hover:text-[#33714c]">
               Services
             </a>
-            <a href="#testimonials" className="hover:text-gray-600">
+            <a
+              href="#testimonials"
+              className="text-[#386641] hover:text-[#6a994e]"
+            >
               Testimonials
             </a>
-            <a href="#contact" className="hover:text-gray-600">
+            <a href="#contact" className="text-[#386641] hover:text-[#6a994e]">
               Contact
             </a>
           </nav>
@@ -115,7 +118,7 @@ const Header = () => {
         >
           <a
             href="#about"
-            className="text-xl hover:text-gray-600"
+            className="text-xl text-[#386641] hover:text-[#6a994e]"
             onClick={() => setIsMenuOpen(false)}
             aria-current="page"
           >
@@ -123,21 +126,21 @@ const Header = () => {
           </a>
           <a
             href="#services"
-            className="text-xl hover:text-gray-600"
+            className="text-xl text-[#386641] hover:text-[#6a994e]"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </a>
           <a
             href="#testimonials"
-            className="text-xl hover:text-gray-600"
+            className="text-xl text-[#386641] hover:text-[#6a994e]"
             onClick={() => setIsMenuOpen(false)}
           >
             Testimonials
           </a>
           <a
             href="#contact"
-            className="text-xl hover:text-gray-600"
+            className="text-xl text-[#386641] hover:text-[#6a994e]"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact

@@ -27,7 +27,7 @@ const Contact = () => {
       aria-label="Contact Information"
     >
       <div className="container mx-auto flex h-full flex-col items-center px-4 py-16">
-        <h2 className="mb-12 text-center text-4xl font-bold text-gray-800">
+        <h2 className="mb-12 text-center text-4xl font-bold text-[#386641]">
           Contact Us
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-gray-600">
@@ -37,22 +37,22 @@ const Contact = () => {
         <div className="w-full max-w-xl space-y-6">
           {/* Mobile: Tel Link */}
           <a
-            href="tel:+1234567890"
-            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-white p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl lg:hidden"
-            aria-label="Call us at (123) 456-7890"
+            href="tel:+7073550455"
+            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl lg:hidden"
+            aria-label="Call us at (707) 355-0455"
           >
             <PhoneOutlined className="text-2xl" aria-hidden="true" />
-            <span>(123) 456-7890</span>
+            <span className="text-[#386641]">(707) 355-0455</span>
           </a>
 
           {/* Desktop: Copy to Clipboard */}
           <button
             onClick={handleCopy}
-            className="hidden w-full cursor-pointer items-center space-x-3 rounded-lg border border-gray-200 bg-white p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl lg:flex"
+            className="hidden w-full cursor-pointer items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl lg:flex"
             aria-label="Copy phone number to clipboard"
           >
             <PhoneOutlined className="text-2xl" aria-hidden="true" />
-            <span>(707) 355-0455</span>
+            <span className="text-[#386641]">(707) 355-0455</span>
             {copied ? (
               <>
                 <span className="text-green-600">Copied!</span>
@@ -65,21 +65,21 @@ const Contact = () => {
 
           <a
             href="mailto:sereneandcleanlife@gmail.com"
-            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-white p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl"
+            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl"
             aria-label="Email us at sereneandcleanlife@gmail.com"
           >
             <MailOutlined className="text-2xl" aria-hidden="true" />
-            <span>sereneandcleanlife@gmail.com</span>
+            <span className="text-[#386641]">sereneandcleanlife@gmail.com</span>
           </a>
           <a
             href="https://www.facebook.com/sereneandcleanlife"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-white p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl"
+            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl"
             aria-label="Visit our Facebook page (opens in new tab)"
           >
             <FacebookOutlined className="text-2xl" aria-hidden="true" />
-            <span>Follow us on Facebook</span>
+            <span className="text-[#386641]">Follow us on Facebook</span>
           </a>
         </div>
       </div>

@@ -52,13 +52,13 @@ const Hero = () => {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <a
               href="#services"
-              className="rounded-md bg-[#52b788] px-8 py-3 text-lg font-semibold text-white shadow-md transition-colors duration-200 hover:bg-[#40916c] focus:ring-2 focus:ring-[#40916c] focus:ring-offset-2 focus:outline-none"
+              className="rounded-md bg-[#386641] px-8 py-3 text-lg font-semibold text-white shadow-md transition-colors duration-200 hover:bg-[#6a994e] focus:ring-2 focus:ring-[#6a994e] focus:ring-offset-2 focus:outline-none"
             >
               Services
             </a>
             <a
               href="#contact"
-              className="rounded-md bg-white px-8 py-3 text-lg font-semibold text-[#081c15] shadow-md transition-colors duration-200 hover:bg-[#d8f3dc] focus:ring-2 focus:ring-[#40916c] focus:ring-offset-2 focus:outline-none"
+              className="rounded-md bg-white px-8 py-3 text-lg font-semibold text-[#081c15] shadow-md transition-colors duration-200 hover:bg-[#f2e8cf] focus:ring-2 focus:ring-[#6a994e] focus:ring-offset-2 focus:outline-none"
             >
               Contact
             </a>
