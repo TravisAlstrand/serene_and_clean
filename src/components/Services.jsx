@@ -2,11 +2,11 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="w-full scroll-mt-20 border-b-2"
+      className="w-full scroll-mt-20 border-b-2 bg-white"
       aria-label="Services Information"
     >
       <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center">
-        <h2 className="mb-12 text-4xl font-bold text-[#386641]">
+        <h2 className="mb-12 text-7xl font-bold text-[#386641]">
           Our Services
         </h2>
         <p className="max-w-5xl text-lg">

@@ -5,7 +5,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f2e8cf;
+}
+
 h1,
+h2,
 .heading-logo {
   font-family: "Birthstone", cursive;
 }

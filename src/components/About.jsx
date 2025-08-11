@@ -1,8 +1,11 @@
 const About = () => {
   return (
-    <section id="about" className="w-full scroll-mt-20 border-b-2 text-center">
+    <section
+      id="about"
+      className="w-full scroll-mt-20 border-b-2 bg-white text-center"
+    >
       <div className="container mx-auto flex flex-col items-center px-4 py-16">
-        <h2 className="mb-12 text-4xl font-bold text-[#386641]">About Us</h2>
+        <h2 className="mb-12 text-7xl font-bold text-[#386641]">About Us</h2>
         <p className="max-w-5xl text-lg">
           At Serene and Clean, we believe a peaceful and serene life begins with
           a clean environment. With busy schedules and demanding lifestyles,

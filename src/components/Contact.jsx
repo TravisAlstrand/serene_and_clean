@@ -23,11 +23,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="h-[calc(100vh-4rem)] w-full scroll-mt-20 border-b-2 bg-white"
+      className="w-full scroll-mt-20 border-b-2 bg-white"
       aria-label="Contact Information"
     >
       <div className="container mx-auto flex h-full flex-col items-center px-4 py-16">
-        <h2 className="mb-12 text-center text-4xl font-bold text-[#386641]">
+        <h2 className="mb-12 text-center text-7xl font-bold text-[#386641]">
           Contact Us
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-gray-600">

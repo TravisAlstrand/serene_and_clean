@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="mx-auto flex max-w-7xl flex-col">
       <Header />
       <Hero />
       <About />
@@ -18,7 +18,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
