@@ -1,20 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Inter:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
+
+/* Tailwind v4 Custom Theme Colors */
+@theme {
+  --color-cream: #faf8f3;
+  --color-cream-dark: #f5f1e8;
+  --color-warm-white: #fdfcfa;
+
+  --color-forest: #2d5016;
+  --color-forest-light: #3a5f2a;
+  --color-moss: #4a7c3b;
+  --color-sage: #6b7f5b;
+  --color-sage-light: #8b9a7e;
+
+  --color-text-primary: #2c3e1f;
+  --color-text-secondary: #4a5a3d;
+  --color-text-muted: #6b7f5b;
+
+  --shadow-soft: 0 2px 8px rgb(45 80 22 / 0.08);
+  --shadow-soft-lg: 0 4px 16px rgb(45 80 22 / 0.12);
+  --shadow-natural: 0 2px 12px rgb(74 124 59 / 0.15);
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f2e8cf;
+  background-color: #faf8f3;
+  color: #2c3e1f;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  position: relative;
+}
+
+/* Subtle texture overlay for natural feel */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 1;
+}
+
+/* Ensure content appears above texture */
+body > * {
+  position: relative;
+  z-index: 2;
 }
 
 h1,
 h2,
 .heading-logo {
   font-family: "Birthstone", cursive;
+  color: #2d5016;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
+h3,
+h4,
+h5,
+h6 {
+  color: #2c3e1f;
+  font-weight: 600;
+}
+
+/* Icon styling for consistency */
 .anticon svg {
-  fill: #136c36;
+  fill: #2d5016;
+  transition: fill 0.3s ease;
+}
+
+.anticon:hover svg {
+  fill: #3a5f2a;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Selection styling to match theme */
+::selection {
+  background-color: #4a7c3b;
+  color: #faf8f3;
+}
+
+/* Custom scrollbar (webkit browsers) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f1e8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7f5b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a7c3b;
 }

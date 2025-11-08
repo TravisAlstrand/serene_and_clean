@@ -35,14 +35,14 @@ const Header = () => {
   return (
     <>
       <header
-        className="sticky top-0 z-[60] h-16 bg-[#f2e8cf] shadow-sm"
+        className="border-sage-light/20 bg-cream/95 shadow-soft sticky top-0 z-[60] h-16 border-b backdrop-blur-sm"
         role="banner"
       >
         <div className="container mx-auto flex h-full items-center justify-between px-4">
           {/* Brand Name - Always visible */}
           <a
             href="#top"
-            className="heading-logo text-3xl font-semibold text-[#386641]"
+            className="heading-logo text-forest hover:text-forest-light text-4xl font-semibold transition-colors duration-300"
             aria-label="Serene and Clean - Home"
           >
             Serene and Clean
@@ -51,15 +51,21 @@ const Header = () => {
           {/* Mobile Menu Icon - Visible only on small and medium screens */}
           <button
             onClick={toggleMenu}
-            className="cursor-pointer lg:hidden"
+            className="hover:bg-sage-light/10 active:bg-sage-light/20 cursor-pointer rounded-lg p-2 transition-colors lg:hidden"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
-              <CloseOutlined className="text-2xl" aria-hidden="true" />
+              <CloseOutlined
+                className="text-forest text-2xl"
+                aria-hidden="true"
+              />
             ) : (
-              <MenuOutlined className="text-2xl" aria-hidden="true" />
+              <MenuOutlined
+                className="text-forest text-2xl"
+                aria-hidden="true"
+              />
             )}
           </button>
 
@@ -71,21 +77,27 @@ const Header = () => {
           >
             <a
               href="#about"
-              className="text-[#386641] hover:text-[#6a994e]"
+              className="text-text-secondary after:bg-moss hover:text-forest relative font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-300 hover:after:w-full"
               aria-current="page"
             >
               About
             </a>
-            <a href="#services" className="text-[#386641] hover:text-[#33714c]">
+            <a
+              href="#services"
+              className="text-text-secondary after:bg-moss hover:text-forest relative font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+            >
               Services
             </a>
             <a
               href="#testimonials"
-              className="text-[#386641] hover:text-[#6a994e]"
+              className="text-text-secondary after:bg-moss hover:text-forest relative font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-300 hover:after:w-full"
             >
               Testimonials
             </a>
-            <a href="#contact" className="text-[#386641] hover:text-[#6a994e]">
+            <a
+              href="#contact"
+              className="text-text-secondary after:bg-moss hover:text-forest relative font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+            >
               Contact
             </a>
           </nav>
@@ -94,7 +106,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 lg:hidden ${
+        className={`bg-forest/40 fixed inset-0 z-40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         } ${prefersReducedMotion ? "transition-none" : ""}`}
         onClick={() => setIsMenuOpen(false)}
@@ -104,7 +116,7 @@ const Header = () => {
       {/* Mobile Menu Panel */}
       <div
         id="mobile-menu"
-        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`border-sage-light/30 bg-warm-white shadow-soft-lg fixed inset-y-0 right-0 z-50 w-full max-w-sm transform border-l transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } ${prefersReducedMotion ? "transition-none" : ""}`}
         role="dialog"
@@ -112,13 +124,13 @@ const Header = () => {
         aria-label="Mobile navigation"
       >
         <nav
-          className="flex h-full flex-col items-center justify-center space-y-8"
+          className="flex h-full flex-col items-center justify-center space-y-10"
           role="navigation"
           aria-label="Mobile navigation"
         >
           <a
             href="#about"
-            className="text-xl text-[#386641] hover:text-[#6a994e]"
+            className="text-text-secondary hover:bg-moss/10 hover:text-forest rounded-lg px-6 py-2 text-2xl font-medium transition-all duration-300"
             onClick={() => setIsMenuOpen(false)}
             aria-current="page"
           >
@@ -126,21 +138,21 @@ const Header = () => {
           </a>
           <a
             href="#services"
-            className="text-xl text-[#386641] hover:text-[#6a994e]"
+            className="text-text-secondary hover:bg-moss/10 hover:text-forest rounded-lg px-6 py-2 text-2xl font-medium transition-all duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </a>
           <a
             href="#testimonials"
-            className="text-xl text-[#386641] hover:text-[#6a994e]"
+            className="text-text-secondary hover:bg-moss/10 hover:text-forest rounded-lg px-6 py-2 text-2xl font-medium transition-all duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             Testimonials
           </a>
           <a
             href="#contact"
-            className="text-xl text-[#386641] hover:text-[#6a994e]"
+            className="text-text-secondary hover:bg-moss/10 hover:text-forest rounded-lg px-6 py-2 text-2xl font-medium transition-all duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
