@@ -7,40 +7,10 @@ const Hero = () => {
           alt="Serene and Clean - Professional Cleaning Services"
           className="block h-full w-full object-cover"
         />
-        {/* Mobile (xs) */}
-        {/* <img
-          src="/images/hero/hero-xs.jpg"
-          alt="Serene and Clean - Professional Cleaning Services"
-          className="block h-full w-full object-cover sm:hidden"
-        /> */}
-        {/* Small tablets (sm) */}
-        {/* <img
-          src="/images/hero/hero-sm.jpg"
-          alt="Serene and Clean - Professional Cleaning Services"
-          className="hidden h-full w-full object-cover sm:block md:hidden"
-        /> */}
-        {/* Tablets (md) */}
-        {/* <img
-          src="/images/hero/hero-md.jpg"
-          alt="Serene and Clean - Professional Cleaning Services"
-          className="hidden h-full w-full object-cover md:block lg:hidden"
-        /> */}
-        {/* Laptops (lg) */}
-        {/* <img
-          src="/images/hero/hero-lg.jpg"
-          alt="Serene and Clean - Professional Cleaning Services"
-          className="hidden h-full w-full object-cover lg:block xl:hidden"
-        /> */}
-        {/* Large screens (xl) */}
-        {/* <img
-          src="/images/hero/hero-xl.jpg"
-          alt="Serene and Clean - Professional Cleaning Services"
-          className="hidden h-full w-full object-cover xl:block"
-        /> */}
       </div>
 
       {/* Overlay with subtle gradient */}
-      <div className="from-forest/30 via-forest/20 to-forest/40 absolute inset-0 bg-gradient-to-b"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
         <div className="relative z-10 -mt-32 text-center">
