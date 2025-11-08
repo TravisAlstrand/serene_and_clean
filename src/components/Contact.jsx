@@ -23,14 +23,14 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full scroll-mt-20 border-b-2 bg-white"
+      className="border-sage-light/20 bg-warm-white w-full scroll-mt-20 border-b"
       aria-label="Contact Information"
     >
-      <div className="container mx-auto flex h-full flex-col items-center px-4 py-16">
-        <h2 className="mb-12 text-center text-7xl font-bold text-[#386641]">
+      <div className="container mx-auto flex h-full flex-col items-center px-4 py-20 md:py-24">
+        <h2 className="text-forest mb-16 text-center text-7xl font-bold md:text-8xl">
           Contact Us
         </h2>
-        <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-gray-600">
+        <p className="text-text-secondary mx-auto mb-12 max-w-2xl text-center text-lg leading-relaxed md:text-xl">
           Have questions or want to schedule a cleaning? Reach out to us using
           any of the methods below!
         </p>
@@ -38,48 +38,66 @@ const Contact = () => {
           {/* Mobile: Tel Link */}
           <a
             href="tel:+7073550455"
-            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl lg:hidden"
+            className="border-moss/20 bg-cream shadow-soft hover:border-moss/40 hover:bg-cream-dark hover:shadow-natural flex items-center space-x-3 rounded-lg border-2 p-6 text-xl transition-all duration-300 lg:hidden"
             aria-label="Call us at (707) 355-0455"
           >
-            <PhoneOutlined className="text-2xl" aria-hidden="true" />
-            <span className="text-[#386641]">(707) 355-0455</span>
+            <PhoneOutlined
+              className="text-forest text-2xl"
+              aria-hidden="true"
+            />
+            <span className="text-forest font-medium">(707) 355-0455</span>
           </a>
 
           {/* Desktop: Copy to Clipboard */}
           <button
             onClick={handleCopy}
-            className="hidden w-full cursor-pointer items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl lg:flex"
+            className="border-moss/20 bg-cream shadow-soft hover:border-moss/40 hover:bg-cream-dark hover:shadow-natural hidden w-full cursor-pointer items-center justify-between rounded-lg border-2 p-6 text-xl transition-all duration-300 lg:flex"
             aria-label="Copy phone number to clipboard"
           >
-            <PhoneOutlined className="text-2xl" aria-hidden="true" />
-            <span className="text-[#386641]">(707) 355-0455</span>
+            <div className="flex items-center space-x-3">
+              <PhoneOutlined
+                className="text-forest text-2xl"
+                aria-hidden="true"
+              />
+              <span className="text-forest font-medium">(707) 355-0455</span>
+            </div>
             {copied ? (
-              <>
-                <span className="text-green-600">Copied!</span>
-                <CheckOutlined className="text-green-600" aria-hidden="true" />
-              </>
+              <div className="flex items-center space-x-2">
+                <span className="text-moss font-semibold">Copied!</span>
+                <CheckOutlined className="text-moss" aria-hidden="true" />
+              </div>
             ) : (
-              <CopyOutlined className="text-2xl" aria-hidden="true" />
+              <CopyOutlined
+                className="text-sage hover:text-moss text-xl transition-colors"
+                aria-hidden="true"
+              />
             )}
           </button>
 
           <a
             href="mailto:sereneandcleanlife@gmail.com"
-            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl"
+            className="border-moss/20 bg-cream shadow-soft hover:border-moss/40 hover:bg-cream-dark hover:shadow-natural flex items-center space-x-3 rounded-lg border-2 p-6 text-xl transition-all duration-300"
             aria-label="Email us at sereneandcleanlife@gmail.com"
           >
-            <MailOutlined className="text-2xl" aria-hidden="true" />
-            <span className="text-[#386641]">sereneandcleanlife@gmail.com</span>
+            <MailOutlined className="text-forest text-2xl" aria-hidden="true" />
+            <span className="text-forest font-medium break-all">
+              sereneandcleanlife@gmail.com
+            </span>
           </a>
           <a
             href="https://www.facebook.com/sereneandcleanlife"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 rounded-lg border border-gray-200 bg-[#f2e8cf] p-5 text-xl shadow-lg transition-shadow duration-300 hover:text-gray-700 hover:shadow-xl"
+            className="border-moss/20 bg-cream shadow-soft hover:border-moss/40 hover:bg-cream-dark hover:shadow-natural flex items-center space-x-3 rounded-lg border-2 p-6 text-xl transition-all duration-300"
             aria-label="Visit our Facebook page (opens in new tab)"
           >
-            <FacebookOutlined className="text-2xl" aria-hidden="true" />
-            <span className="text-[#386641]">Follow us on Facebook</span>
+            <FacebookOutlined
+              className="text-forest text-2xl"
+              aria-hidden="true"
+            />
+            <span className="text-forest font-medium">
+              Follow us on Facebook
+            </span>
           </a>
         </div>
       </div>

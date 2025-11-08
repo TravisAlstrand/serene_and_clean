@@ -1,41 +1,58 @@
 const Footer = () => {
   return (
-    <footer className="border-t-2 bg-[#f2e8cf] py-8 text-[#081c15]">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:gap-0">
+    <footer className="border-moss/30 bg-cream-dark text-text-primary border-t-2 py-10">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 md:flex-row md:gap-0">
         {/* Copyright */}
-        <span className="text-sm">
+        <span className="text-text-secondary text-sm md:text-xs lg:text-sm">
           &copy; 2025 Serene and Clean. All rights reserved.
         </span>
 
         {/* Back to Top (mobile only) */}
         <a
           href="#top"
-          className="mt-2 text-sm font-medium text-[#386641] underline hover:text-[#6a994e] md:hidden"
+          className="bg-forest text-warm-white hover:bg-forest-light mt-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-300 hover:scale-105 md:hidden"
           aria-label="Back to Top"
         >
-          Back to Top
+          Back to Top ↑
         </a>
 
         {/* Footer Navigation (tablet and up) */}
         <nav
-          className="hidden space-x-8 md:flex"
+          className="hidden space-x-6 md:flex"
           role="navigation"
           aria-label="Footer navigation"
         >
-          <a href="#about" className="text-[#386641] hover:text-[#6a994e]">
+          <a
+            href="#about"
+            className="text-text-secondary hover:text-forest font-medium transition-colors duration-300"
+          >
             About
           </a>
-          <a href="#services" className="text-[#386641] hover:text-[#6a994e]">
+          <a
+            href="#services"
+            className="text-text-secondary hover:text-forest font-medium transition-colors duration-300"
+          >
             Services
           </a>
           <a
             href="#testimonials"
-            className="text-[#386641] hover:text-[#6a994e]"
+            className="text-text-secondary hover:text-forest font-medium transition-colors duration-300"
           >
             Testimonials
           </a>
-          <a href="#contact" className="text-[#386641] hover:text-[#6a994e]">
+          <a
+            href="#contact"
+            className="text-text-secondary hover:text-forest font-medium transition-colors duration-300"
+          >
             Contact
+          </a>
+          <span className="text-text-muted">|</span>
+          <a
+            href="#top"
+            className="text-text-secondary hover:text-forest font-medium transition-colors duration-300"
+            aria-label="Back to Top"
+          >
+            Top
           </a>
         </nav>
       </div>

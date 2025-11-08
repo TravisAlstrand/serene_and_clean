@@ -4,22 +4,22 @@ import { useRef, useState, useEffect } from "react";
 
 const contentStyle = {
   height: "100%",
-  color: "#081c15",
+  color: "#2C3E1F",
   textAlign: "center",
-  background: "#f2e8cf",
+  background: "#FDFCFA",
   padding: "2rem",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  borderRadius: "0.5rem",
-  boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
-  border: "1px solid #FFF",
+  borderRadius: "1rem",
+  boxShadow: "0 2px 12px rgba(74, 124, 59, 0.15)",
+  border: "2px solid rgba(74, 124, 59, 0.2)",
   margin: "0 1rem",
 };
 
 const arrowButtonClass =
-  "absolute top-1/2 -translate-y-1/2 z-10 border border-gray-300 rounded-full shadow-lg p-2 text-2xl text-gray-700 bg-white hover:bg-gray-50 hover:text-blue-600 transition-colors duration-200 cursor-pointer";
+  "absolute top-1/2 -translate-y-1/2 z-10 border-2 border-moss/30 rounded-full shadow-soft p-2 text-2xl text-forest bg-warm-white hover:bg-cream hover:border-moss/50 hover:text-forest-light transition-all duration-300 cursor-pointer";
 
 const Testimonials = () => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
@@ -39,14 +39,14 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="w-full scroll-mt-20 border-b-2 bg-white"
+      className="border-sage-light/20 bg-cream w-full scroll-mt-20 border-b"
       aria-label="Customer Testimonials"
     >
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="mb-12 text-center text-7xl font-bold text-[#386641]">
+      <div className="container mx-auto px-4 py-20 md:py-24">
+        <h2 className="text-forest mb-16 text-center text-7xl font-bold md:text-8xl">
           What Our Clients Say
         </h2>
-        <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-gray-600">
+        <p className="text-text-secondary mx-auto mb-12 max-w-3xl text-center text-lg leading-relaxed md:text-xl">
           Don't just take our word for it. Here's what our satisfied customers
           have to say about their experience with Serene and Clean.
         </p>
@@ -92,15 +92,17 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
+                  <h3 className="text-forest mb-4 text-2xl font-semibold">
                     Awesome service!
                   </h3>
-                  <p className="mb-6">
+                  <p className="text-text-secondary mb-6 text-lg leading-relaxed">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium">- Sarah Johnson</p>
+                  <p className="text-moss text-lg font-semibold">
+                    - Sarah Johnson
+                  </p>
                 </div>
               </div>
             </div>
@@ -112,15 +114,17 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
+                  <h3 className="text-forest mb-4 text-2xl font-semibold">
                     Dedicated and reliable
                   </h3>
-                  <p className="mb-6">
+                  <p className="text-text-secondary mb-6 text-lg leading-relaxed">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium">- Michael Chen</p>
+                  <p className="text-moss text-lg font-semibold">
+                    - Michael Chen
+                  </p>
                 </div>
               </div>
             </div>
@@ -132,15 +136,17 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
+                  <h3 className="text-forest mb-4 text-2xl font-semibold">
                     Great attention to detail
                   </h3>
-                  <p className="mb-6">
+                  <p className="text-text-secondary mb-6 text-lg leading-relaxed">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium">- Emily Rodriguez</p>
+                  <p className="text-moss text-lg font-semibold">
+                    - Emily Rodriguez
+                  </p>
                 </div>
               </div>
             </div>
@@ -152,15 +158,17 @@ const Testimonials = () => {
             >
               <div style={contentStyle}>
                 <div className="mx-auto max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-[#386641]">
+                  <h3 className="text-forest mb-4 text-2xl font-semibold">
                     Excellent customer service
                   </h3>
-                  <p className="mb-6">
+                  <p className="text-text-secondary mb-6 text-lg leading-relaxed">
                     I had a great experience with Serene and Clean. The staff
                     was friendly and the service was excellent. I would
                     definitely recommend them to anyone.
                   </p>
-                  <p className="text-lg font-medium">- David Thompson</p>
+                  <p className="text-moss text-lg font-semibold">
+                    - David Thompson
+                  </p>
                 </div>
               </div>
             </div>

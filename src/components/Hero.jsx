@@ -38,29 +38,33 @@ const Hero = () => {
           className="hidden h-full w-full object-cover xl:block"
         /> */}
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/20">
+
+      {/* Overlay with subtle gradient */}
+      <div className="from-forest/30 via-forest/20 to-forest/40 absolute inset-0 bg-gradient-to-b"></div>
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
         <div className="relative z-10 -mt-32 text-center">
-          <h1 className="text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] lg:text-9xl">
+          <h1 className="text-warm-white text-7xl font-bold drop-shadow-[0_4px_12px_rgba(45,80,22,0.8)] lg:text-9xl">
             Serene and Clean
           </h1>
-          <p className="mt-4 text-lg text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] md:text-xl lg:text-2xl">
+          <p className="text-cream mt-6 text-xl drop-shadow-[0_2px_8px_rgba(45,80,22,0.7)] md:text-2xl lg:text-3xl">
             Professional Cleaning Services
           </p>
-          <p className="mt-1 text-lg text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] md:text-xl lg:text-2xl">
+          <p className="text-cream mt-2 text-xl drop-shadow-[0_2px_8px_rgba(45,80,22,0.7)] md:text-2xl lg:text-3xl">
             for Nevada and Placer Counties
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <a
               href="#services"
-              className="rounded-md bg-[#386641] px-8 py-3 text-lg font-semibold text-white shadow-md transition-colors duration-200 hover:bg-[#6a994e] focus:ring-2 focus:ring-[#6a994e] focus:ring-offset-2 focus:outline-none"
+              className="group bg-forest text-warm-white shadow-natural hover:bg-forest-light focus:ring-moss rounded-lg px-8 py-3.5 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(74,124,59,0.3)] focus:ring-2 focus:ring-offset-2 focus:outline-none"
             >
-              Services
+              Our Services
             </a>
             <a
               href="#contact"
-              className="rounded-md bg-white px-8 py-3 text-lg font-semibold text-[#081c15] shadow-md transition-colors duration-200 hover:bg-[#f2e8cf] focus:ring-2 focus:ring-[#6a994e] focus:ring-offset-2 focus:outline-none"
+              className="group border-warm-white bg-warm-white/95 text-forest shadow-natural hover:bg-cream hover:border-cream focus:ring-warm-white rounded-lg border-2 px-8 py-3.5 text-lg font-semibold backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(250,248,243,0.4)] focus:ring-2 focus:ring-offset-2 focus:outline-none"
             >
-              Contact
+              Get in Touch
             </a>
           </div>
         </div>
