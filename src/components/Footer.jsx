@@ -56,6 +56,15 @@ const Footer = () => {
           </a>
         </nav>
       </div>
+      <div className="container mx-auto mt-1 px-4 text-center">
+        <a
+          className="text-text-secondary hover:text-forest text-sm transition-colors duration-300 md:text-xs lg:text-sm"
+          href="https://www.flaticon.com/free-icons/leaf"
+          title="leaf icons"
+        >
+          Leaf favicon created by Roundicons - Flaticon
+        </a>
+      </div>
     </footer>
   );
 };
